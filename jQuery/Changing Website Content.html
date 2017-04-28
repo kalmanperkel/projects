@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery 2</title>
+    <script type="text/javascript" src="jquery.min.js"></script>
+
+    <style>
+        #circle{
+
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            border-radius: 100px;
+        }
+
+        #content{
+
+            margin-top: 200px;
+            width: 1000px;
+            height: 1000px;
+
+        }
+
+
+    </style>
+</head>
+
+
+<body>
+
+<div id="circle">
+
+    <p>this is some text</p>
+
+    <iframe id="content" src="http://www.cnn.com"></iframe>
+
+</div>
+
+<script>
+
+    $("#circle").hover(function () {
+
+        $("p").html("changed!")
+
+       ($("iframe").attr("src"));
+
+
+            
+        });
+
+
+</script>
+
+
+</body>
+</html>

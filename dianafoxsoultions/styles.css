@@ -1,0 +1,51 @@
+body {
+    background-color: black;
+    width: 50%;
+    margin: 0 auto;
+}
+
+div.top {
+
+    background: url("images/topbackground.png") no-repeat center;
+    background-size: contain;
+    height: 60%;
+    width: 100%;
+    min-height: 60vh;
+    max-height: 60%;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+
+div.bottom {
+
+    background-color: #0d3943;
+    height: 30px;
+    width: 684px;
+    right: -42px;
+    min-height: 35vh;
+    max-height: 60%;
+    position: relative;
+
+}
+img.logo{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 200px;
+}
+
+h1.text {
+    color: white;
+    font-family: "Microsoft Yi Baiti", serif;
+    text-align: center;
+    position:relative;
+    bottom:0;
+    font-size: 300%;
+    top: 121px;
+
+
+
+
+}
+

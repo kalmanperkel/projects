@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Learning javascript 3</title>
+</head>
+<body>
+
+<input id="myInput" type="text" value="test" />
+
+<button id="styleChanger"> Change the text!</button>
+
+<div id="firstDiv">This is some text</div>
+
+
+<script type="text/javascript">
+
+    var newText=document.getElementById("myInput").value;
+
+
+
+
+
+    document.getElementById("styleChanger").onclick = function() {
+
+        newText=document.getElementById("myInput").value;
+
+        document.getElementById("firstDiv").innerHTML=newText;
+
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>array</title>
+</head>
+<body>
+
+<button id="styleChanger"> Change the text!</button>
+
+<div id="firstDiv">This is some text</div>
+
+
+<script type="text/javascript">
+
+    var myArray = new Array();
+
+    myArray[0]="pizza";
+    myArray[1]="chocolate";
+
+
+
+
+   myotherArray  = ["rain", "sunshine"];
+
+
+   myotherArray.push("snow");
+
+   myotherArray.splice(2 , 0 , "hail" , "cloudy");
+
+
+   console.log(myotherArray.length);
+
+
+
+
+    document.getElementById("styleChanger").onclick = function() {
+
+        document.getElementById("firstDiv").innerHTML=myArray[1];
+
+    }
+
+
+</script>
+
+
+</body>
+</html>

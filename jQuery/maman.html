@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p id="number"></p>
+
+<script type="text/javascript">
+
+
+
+    var arrayOfNumbers = [1, 2, 3, 4, 5, 6];
+
+    var f = function (a, low, high) {
+        var res = 0;
+        for (var i = low; i <= high; i++)             res += a[i];
+        return res;
+    };
+
+
+
+
+
+    var what = function (arrayNumber) {
+        var temp = 0;
+        for (var i = 0; i < arrayNumber.length; i++) {
+            for (var j = i; j < arrayNumber.length; j++) {
+                var c = f(a, i, j);
+                if (c % 3 == 0) {
+                    if (j - i + 1 > temp) temp = j - i + 1;
+                }
+            }
+        }
+        return temp;
+    }
+
+    document.getElementById("number").innerHTML = what([2,3,4]);
+
+
+    var result = what(arrayOfNumbers);
+
+
+
+
+</script>
+
+</body>
+</html>

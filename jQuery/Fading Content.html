@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery 4</title>
+    <script type="text/javascript" src="jquery.min.js"></script>
+
+    <style>
+
+
+    </style>
+
+</head>
+
+
+<body>
+
+<p>This is some text</p>
+
+<button id="fader">Fade Out</button>
+
+<button id="faderIn">Fade In</button>
+
+<script>
+
+    $("#fader").click(function () {
+
+        $("p").fadeOut("slow", function () {
+
+            alert("Fadeout complete!")
+            
+        });
+
+        $("#faderIn").click(function () {
+
+            $("p").fadeIn(function () {
+
+                alert("Fadein complete!")
+
+            });
+
+        });
+
+
+    });
+
+</script>
+
+</body>
+
+
+</html>
